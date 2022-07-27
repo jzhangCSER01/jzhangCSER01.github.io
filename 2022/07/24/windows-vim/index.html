@@ -10,12 +10,12 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="windows10 使用 vim由于 windows 下的 cmd 很多命令都不支持，所以推荐使用 vim 编辑器 1、下载 windows 版本 vimGithub 下载地址: Releases · vim&#x2F;vim-win32-installer (github.com) 选择 64 位版本">
+  <meta name="description" content="windows10 使用 vimVim 是从 vi 发展出来的一个文本编辑器。代码补全、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。 简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。 连 vim 的官方网站 (https:&#x2F;&#x2F;www.vim.org&#x2F;) 自己也说 vim 是一个程序开发工具而不">
 <meta property="og:type" content="article">
 <meta property="og:title" content="windows-vim">
 <meta property="og:url" content="https://jzhangcser01.github.io/2022/07/24/windows-vim/index.html">
 <meta property="og:site_name" content="jzhang">
-<meta property="og:description" content="windows10 使用 vim由于 windows 下的 cmd 很多命令都不支持，所以推荐使用 vim 编辑器 1、下载 windows 版本 vimGithub 下载地址: Releases · vim&#x2F;vim-win32-installer (github.com) 选择 64 位版本">
+<meta property="og:description" content="windows10 使用 vimVim 是从 vi 发展出来的一个文本编辑器。代码补全、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。 简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。 连 vim 的官方网站 (https:&#x2F;&#x2F;www.vim.org&#x2F;) 自己也说 vim 是一个程序开发工具而不">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://jzhangcser01.github.io/2022/07/24/windows-vim/image-20220721124710042.png">
 <meta property="og:image" content="https://jzhangcser01.github.io/2022/07/24/windows-vim/image-20220721125038456.png">
@@ -30,8 +30,9 @@
 <meta property="og:image" content="https://jzhangcser01.github.io/2022/07/24/windows-vim/image-20220721130626388.png">
 <meta property="og:image" content="https://jzhangcser01.github.io/2022/07/24/windows-vim/image-20220721130443582.png">
 <meta property="og:image" content="https://jzhangcser01.github.io/2022/07/24/windows-vim/image-20220721130811002.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/07/24/windows-vim/image-20220724214405518.png">
 <meta property="article:published_time" content="2022-07-24T09:51:28.000Z">
-<meta property="article:modified_time" content="2022-07-24T14:40:35.811Z">
+<meta property="article:modified_time" content="2022-07-27T05:35:27.281Z">
 <meta property="article:author" content="Jiong Zhang">
 <meta property="article:tag" content="windows">
 <meta property="article:tag" content="vim">
@@ -254,7 +255,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">1.7k字</span>
+      <span class="post-count">1.9k字</span>
     </span>
   </span>
 
@@ -263,7 +264,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">6分</span>
+      <span class="post-count">7分</span>
     </span>
   </span>
 </div>
@@ -274,7 +275,10 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="windows10-使用-vim"><a href="#windows10-使用-vim" class="headerlink" title="windows10 使用 vim"></a>windows10 使用 vim</h1><p>由于 windows 下的 cmd 很多命令都不支持，所以推荐使用 vim 编辑器</p>
+    <h1 id="windows10-使用-vim"><a href="#windows10-使用-vim" class="headerlink" title="windows10 使用 vim"></a>windows10 使用 vim</h1><p>Vim 是从 vi 发展出来的一个文本编辑器。代码补全、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。</p>
+<p>简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。</p>
+<p>连 vim 的官方网站 (<a target="_blank" rel="noopener" href="https://www.vim.org/">https://www.vim.org/</a>) 自己也说 vim 是一个程序开发工具而不是文字处理软件。</p>
+<p>做 Linux 开发的小伙伴应该非常熟悉 vim, 它可以很方便的在命令行里编辑任何文件。那么 windows 下如何使用 vim 编辑器呢？本文将介绍 windows 下 vim 的安装与配置，推荐使用 git bash 搭配 vim。</p>
 <h2 id="1、下载-windows-版本-vim"><a href="#1、下载-windows-版本-vim" class="headerlink" title="1、下载 windows 版本 vim"></a>1、下载 windows 版本 vim</h2><p>Github 下载地址: <a target="_blank" rel="noopener" href="https://github.com/vim/vim-win32-installer/releases">Releases · vim&#x2F;vim-win32-installer (github.com)</a></p>
 <p>选择 64 位版本</p>
 <span id="more"></span>
@@ -318,7 +322,7 @@
 
 <p>5、点击确定，一共三个窗口，三次确定</p>
 <h2 id="4、vim-介绍"><a href="#4、vim-介绍" class="headerlink" title="4、vim 介绍"></a>4、vim 介绍</h2><p>安装结束后，点击开始菜单，会发现 vim 文件夹内有好多与 vim 相关的程序，而且名字都不一样，如下图:</p>
-
+<img src="/2022/07/24/windows-vim/image-20220724214405518.png" class="" title="This is an image">
 
 <p>它们的区别如下:</p>
 <p>1、有 g 和没有 g</p>
@@ -337,6 +341,7 @@
 <p>1、基本配置如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line">&quot; 基本配置</span><br><span class="line">&quot; </span><br><span class="line">&quot;</span><br><span class="line">&quot; 设置行号</span><br><span class="line">set number</span><br><span class="line">&quot; 语法高亮。自动识别代码，使用多种颜色表示</span><br><span class="line">syntax enable</span><br><span class="line">&quot; 选择颜色主题(已经下载好并放到$VIM/vim90/colors文件夹下) ，推荐自行下载使用solarized主题</span><br><span class="line">colorscheme solarized</span><br><span class="line">&quot; 设置gvim的字体</span><br><span class="line">set guifont=Consolas:h12</span><br><span class="line">&quot; 设置gvim下和外部的复制粘贴</span><br><span class="line">vmap &lt;C-c&gt; &quot;+y</span><br><span class="line">vmap &lt;C-x&gt; &quot;+c</span><br><span class="line">vmap &lt;C-v&gt; c&lt;ESC&gt;&quot;+p</span><br><span class="line">imap &lt;C-v&gt; &lt;C-r&gt;&lt;C-o&gt;+</span><br><span class="line">&quot; 支持使用鼠标</span><br><span class="line">set mouse=a</span><br><span class="line">&quot; 按下回车键后，下一行的缩进会自动跟上一行的缩进保持一致</span><br><span class="line">set autoindent</span><br><span class="line">&quot; 按下Tab键后，vim显示的空格数</span><br><span class="line">set tabstop=4</span><br><span class="line">&quot; normal模式下，&gt;&gt;增加一级缩进、&lt;&lt;取消一级缩进、==取消全部缩进时，每一级缩进的空格数</span><br><span class="line">set shiftwidth=4</span><br><span class="line">&quot; 自动将Tab转为空格(防止Tab键在不同编辑器缩进不一致导致问题)</span><br><span class="line">set expandtab</span><br><span class="line">&quot; Tab转为多少个空格</span><br><span class="line">set softtabstop=4</span><br><span class="line">&quot; 光标所在行高亮</span><br><span class="line">set cursorline</span><br><span class="line">highlight CursorLine   cterm=NONE ctermbg=black guibg=NONE guifg=NONE</span><br><span class="line">&quot; 关闭自动折行</span><br><span class="line">set nowrap</span><br><span class="line">&quot; 垂直滚动时，光标距离顶部/底部的距离（单位：行）</span><br><span class="line">set scrolloff=5</span><br><span class="line">&quot; 水平滚动时，光标距离行首或行尾的距离（单位：字符）</span><br><span class="line">set sidescrolloff=30</span><br><span class="line">&quot; 设置行宽，即一行显示多少字符</span><br><span class="line">set textwidth=1000</span><br><span class="line">&quot; 是否显示状态栏：0表示不显示，1表示只在多窗口显示，2表示显示</span><br><span class="line">set laststatus=2</span><br><span class="line">&quot; 设置状态条显示的信息：文件名、光标所在字符的ASCII码、光标所在字符的ASCII码的十六进制、光标所在的位置、光标所在行之上的内容占整个文件的百分比、文件总行数</span><br><span class="line">set statusline=\ %F%m%r%h%w\ \ \ \ ASCII=\%03.3b\ \ \ \ HEX=\%02.2B\ \ \ \ POS=%04l,%04v\ \ \ \ %p%%\ \ \ \ NumOfLine=%L</span><br><span class="line">&quot; 显示行尾的空格</span><br><span class="line">highlight WhitespaceEOL ctermbg=red guibg=red</span><br><span class="line">match WhitespaceEOL /\s\+$/</span><br><span class="line">&quot; 光标遇到括号时，自动高亮对应的另一半括号</span><br><span class="line">set showmatch</span><br><span class="line">&quot; 命令行模式下，在底部显示当前键入的指令。例如键入dd删除一行时，键入第一个d，底部右侧显示d，完全键入dd时，操作完成，底部显示消失</span><br><span class="line">set showcmd</span><br><span class="line">&quot; 搜索时，高亮显示搜索结果</span><br><span class="line">set hlsearch</span><br><span class="line">&quot; 搜索时，每输入一个字符，自动跳到第一个匹配的结果</span><br><span class="line">set incsearch</span><br><span class="line">&quot; 搜索时忽略大小写</span><br><span class="line">set ignorecase</span><br><span class="line">&quot; 不创建交换文件</span><br><span class="line">set noswapfile</span><br><span class="line">&quot; 保留 撤销 操作历史</span><br><span class="line">set undofile</span><br><span class="line">&quot; 设置操作历史文件的保存位置</span><br><span class="line">set undodir=$VIM\.undo</span><br><span class="line">&quot; vim需要记住多少次历史操作</span><br><span class="line">set history=1000</span><br><span class="line">&quot; 命令模式下，底部操作指令按下 Tab 键自动补全。第一次按下 Tab，会显示所有匹配的操作指令的清单；第二次按下 Tab，会依次选择各个指令</span><br><span class="line">set wildmenu</span><br><span class="line">set wildmode=longest:list,full</span><br><span class="line">&quot; 定义F1快捷键为切换vim窗口</span><br><span class="line">map &amp;ltF1&amp;gt &amp;ltC-w&amp;gtw</span><br><span class="line">&quot;设置文件的代码形式 utf8</span><br><span class="line">set encoding=utf-8</span><br><span class="line">set termencoding=utf-8</span><br><span class="line">set fileencoding=utf-8</span><br><span class="line">set fileencodings=ucs-bom,utf-8,chinese,cp936</span><br></pre></td></tr></table></figure>
 
+<p>——未完待续——</p>
 
     
 
