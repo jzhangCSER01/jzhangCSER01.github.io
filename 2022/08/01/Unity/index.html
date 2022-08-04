@@ -29,8 +29,19 @@
 <meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220802140908581.png">
 <meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220802141558924.png">
 <meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220802142159688.png">
+<meta property="og:image" content="https://docs.unity3d.com/cn/current/uploads/Main/scene-view.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804125223965.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804125955806.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804130949611.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804131648476.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804132654341.png">
+<meta property="og:image" content="https://docs.unity3d.com/cn/current/uploads/Main/game-objects-transform-modes.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804134241461.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804134648461.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804135515114.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804135734153.png">
 <meta property="article:published_time" content="2022-08-01T11:54:02.000Z">
-<meta property="article:modified_time" content="2022-08-02T06:27:57.049Z">
+<meta property="article:modified_time" content="2022-08-04T06:03:08.326Z">
 <meta property="article:author" content="Jiong Zhang">
 <meta property="article:tag" content="Unity">
 <meta name="twitter:card" content="summary">
@@ -252,7 +263,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">1k字</span>
+      <span class="post-count">3.7k字</span>
     </span>
   </span>
 
@@ -261,7 +272,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">3分</span>
+      <span class="post-count">13分</span>
     </span>
   </span>
 </div>
@@ -287,7 +298,7 @@
 <p>2、在弹出的登录框中可选择微信登录</p>
 <img src="/2022/08/01/Unity/image-20220801200552335.png" class="" title="This is an image">
 
-<h3 id="1-2-2-安装-Unity-Hub"><a href="#1-2-2-安装-Unity-Hub" class="headerlink" title="1.2.2 安装 Unity Hub"></a>1.2.2 安装 Unity Hub</h3><p>1、选择安装目录</p>
+<h3 id="1-2-2、安装-Unity-Hub"><a href="#1-2-2、安装-Unity-Hub" class="headerlink" title="1.2.2、安装 Unity Hub"></a>1.2.2、安装 Unity Hub</h3><p>1、选择安装目录</p>
 <img src="/2022/08/01/Unity/image-20220801201230391.png" class="" title="This is an image">
 
 <p>2、激活新许可证</p>
@@ -340,6 +351,203 @@
 <img src="/2022/08/01/Unity/image-20220802142159688.png" class="" title="This is an image">
 
 <h3 id="2-1-3、布局"><a href="#2-1-3、布局" class="headerlink" title="2.1.3、布局"></a>2.1.3、布局</h3><p>除去 4 个栏位不能拖动，unity 中的 2 个视图区域 + 3 个窗口，以及其他的一些窗口，都可以自由布局，可根据自己的使用习惯，设置不同的布局，并且存储下来，随时可以还原。</p>
+<h2 id="2-2、Scene-视图"><a href="#2-2、Scene-视图" class="headerlink" title="2.2、Scene 视图"></a>2.2、Scene 视图</h2><blockquote>
+<p>官方文档: <a target="_blank" rel="noopener" href="https://docs.unity3d.com/cn/current/Manual/UsingTheSceneView.html">Scene 视图 - Unity 手册 (unity3d.com)</a></p>
+</blockquote>
+<img src="https://docs.unity3d.com/cn/current/uploads/Main/scene-view.png" alt="Scene 视图" title="Scene 视图">
+
+<p>Scene 视图是正在创建的世界的交互式视图。Scene 视图可用于选择和定位景物、角色、摄像机、光源和所有其他类型的游戏对象。在 Scene 视图中选择、操作和修改游戏对象是开始使用 Unity 必须掌握的一些必要技能。</p>
+<p>本节将详细介绍以下内容:</p>
+<ul>
+<li>如何在 Scene 中移动，找到合适的操作视角</li>
+<li>如何在 Scene 中选择游戏对象</li>
+<li>如何在 Scene 中操作游戏对象位置设定与变换设定</li>
+<li>Scene 视图控制栏</li>
+<li>Scene 视图摄像机</li>
+<li>Gizmos 菜单</li>
+</ul>
+<h3 id="2-2-1、在-Scene-中移动"><a href="#2-2-1、在-Scene-中移动" class="headerlink" title="2.2.1、在 Scene 中移动"></a>2.2.1、在 Scene 中移动</h3><p>1、<strong>坐标工具</strong></p>
+<ol>
+<li><p>Unity 坐标系统</p>
+<p>3D 坐标系是 3D 游戏开发与 VR 开发中的基础概念。一般而言 3D 坐标系都是使用的笛卡尔坐标系来描述物体的坐标信息，笛卡尔坐标系：分为左手坐标系与右手坐标系</p>
+<img src="/2022/08/01/Unity/image-20220804125223965.png" class="" title="This is an image">
+
+<p>Unity 中使用的是左手坐标系，X 轴代表水平方向 horizontal, Y 轴代表垂直方向 vertical ，Z 轴代表深度。Vector3(x,y,z)</p>
+<p>Unity 中坐标系分类:</p>
+<ul>
+<li><p>word Space（世界坐标系）: 用来描述游戏场景内所有物体位置和方向的基准，Unity 场景中创建的物体都是以全局坐标系中的坐标原点（0，0，0）来确定各自的位置。</p>
+</li>
+<li><p>local Space（局部坐标系）: 是相对于父物体来说也就是当两个游戏对象互为父子关系，那么子物体会以父物体的坐标点为自身的坐标原点。如果游戏对象没有父物体,那么会以这个世界的 0,0 为自身的坐标原点。</p>
+</li>
+<li><p>Screen Space（屏幕坐标系）: 以像素为单位，左下角是（0，0），右上角为（screen.width, screen.height），Z 的位置是以相机的世界单位来衡量及物体离相机远近。</p>
+</li>
+<li><p>viewport（视口坐标）: 视口坐标是标准的和相对于相机的。相机的左下角为（0，0）点，右上角为（1，1）点，Z 的位置是以相机的世界单位来衡量的。</p>
+</li>
+<li><p>GUI 界面的坐标系: 这个坐标系与屏幕坐标系相似，不同的是该坐标系以屏幕的左上角为（0，0）点，右下角为（Screen.width，Screen.height）。</p>
+</li>
+</ul>
+</li>
+<li><p>Scene 视图坐标工具</p>
+<p>需要先打开 3D 视图，在 scene 视图右上角，可以快速调整视角</p>
+<img src="/2022/08/01/Unity/image-20220804125955806.png" class="" title="This is an image">
+
+<p>单击任何锥形轴臂会将 Scene 视图摄像机对齐到该锥形轴臂所代表的轴（例如：顶视图、左视图和前视图）。还可以右键单击该立方体来显示一个包含视角列表的菜单。要返回默认视角，请右键单击场景视图辅助图标，然后单击 Free。</p>
+<p>技巧: Shift 键并单击场景视图辅助图标中心的立方体，即可返回<strong>透视图</strong>，使用从侧面和略微从上方观察的角度查看场景。</p>
+</li>
+</ol>
+<p>2、<strong>导航工具</strong></p>
+<ol>
+<li><p>方向键: 用方向键(上下左右)在场景中移动，同时按住 shift 可加速</p>
+</li>
+<li><p>手型工具(Q) + 鼠标:</p>
+<ul>
+<li>移动: 选中后，鼠标左键单击并拖动；</li>
+<li>旋转: alt&#x2F;option，左键单击并拖动围绕当前轴心点旋转视角；2d 模式不可用</li>
+<li>缩放: alt&#x2F;option，右键单击并拖动可缩放</li>
+</ul>
+<img src="/2022/08/01/Unity/image-20220804130949611.png" class="" title="This is an image">
+</li>
+<li><p>按住鼠标右键进入”飞跃模式”: 使用 WASD 键向左&#x2F;向右&#x2F;向前&#x2F;向后移动，使用 Q 和 E 键向上和向下移动。按住 Shift 键可以加快移动速度。 </p>
+</li>
+<li><p>聚焦指定对象: 选中对象后，点 F；要将视图锁定到游戏对象（即使游戏对象正在移动），请按 Shift+F。</p>
+</li>
+</ol>
+<p>另外一些快捷键:</p>
+<img src="/2022/08/01/Unity/image-20220804131648476.png" class="" title="This is an image">
+
+<h3 id="2-2-2、选择游戏对象-Game-Object"><a href="#2-2-2、选择游戏对象-Game-Object" class="headerlink" title="2.2.2、选择游戏对象(Game Object)"></a>2.2.2、选择游戏对象(Game Object)</h3><blockquote>
+<p>官方文档: <a target="_blank" rel="noopener" href="https://docs.unity3d.com/cn/current/Manual/ScenePicking.html">Pick and select GameObjects - Unity 手册 (unity3d.com)</a></p>
+</blockquote>
+<p>复杂的场景中，可能有成千上万个游戏对象，如何快速选中想要的游戏对象也是一门技术</p>
+<p>Unity 会在 Scene 视图中突出显示选择的游戏对象及其子项。默认情况下，选择轮廓颜色为橙色，子项轮廓颜色为蓝色。还可以选择以其它颜色突出显示所选游戏对象的线框(Unity 设置中可以更改)。</p>
+<p>1、<strong>选中 Game Object</strong></p>
+<p><strong>单选</strong></p>
+<ol>
+<li>在 Scene 视图中单击游戏对象。如果反复单击重叠的游戏对象之间的共享空间，选择将在这些游戏对象之间循环;</li>
+<li>在 Hierarchy 窗口中单击游戏对象的名称(推荐优先使用)</li>
+</ol>
+<p><strong>多选</strong></p>
+<ol>
+<li>鼠标拖拽矩形框</li>
+<li>shift + 鼠标左键单击；Ctrl&#x2F;Command 在选择范围内添加或删除游戏对象。</li>
+</ol>
+<p>2、<strong>设置是否允许选中</strong></p>
+<p>在 Hierarchy 中，点击游戏对象“拾取”标记，来控制该对象的可选性</p>
+<ul>
+<li>鼠标左键单击“拾取标记”: 该对象和其子对象</li>
+<li>Alt+鼠标左键单击“拾取标记”: 仅仅影响对象本身，不影响子对象</li>
+</ul>
+<img src="/2022/08/01/Unity/image-20220804132654341.png" class="" title="This is an image">
+
+<blockquote>
+<p>注意：<br>在 Hierarchy 窗口中进行的所有场景拾取更改都是持久有效的。每当使用 Select All 或 Deselect All、关闭然后重新打开场景或进行其他操作时，Unity 都会重新应用这些更改。</p>
+</blockquote>
+<h3 id="2-2-3、游戏对象定位和变形"><a href="#2-2-3、游戏对象定位和变形" class="headerlink" title="2.2.3、游戏对象定位和变形"></a>2.2.3、游戏对象定位和变形</h3><blockquote>
+<p>官方文档: <a target="_blank" rel="noopener" href="https://docs.unity3d.com/cn/current/Manual/PositioningGameObjects.html">Position GameObjects - Unity 手册 (unity3d.com)</a></p>
+</blockquote>
+<p>1、<strong>游戏对象的定位(移动)和变换(变形)</strong></p>
+<p>游戏对象的移动和变换，是通过 Scene 视图左侧的五个工具来实现的</p>
+<img src="https://docs.unity3d.com/cn/current/uploads/Main/game-objects-transform-modes.png" alt="定位和变换" title="定位和变换">
+
+<ol>
+<li><p>移动:</p>
+<p>选中移动工具(w)</p>
+<ul>
+<li>沿坐标轴移动: 按着坐标轴移动</li>
+<li>沿平面移动: 按着方块移动</li>
+<li>沿 Scene Camera 所面向的平面移动: 按着 shift，移动方块</li>
+</ul>
+</li>
+<li><p>旋转:<br>选择旋转工具(e)后，通过单击并拖动围绕游戏对象显示的线框球体辅助图标的轴来更改游戏对象的旋转。（红色表示 x 轴，绿色表示 y 轴，蓝色表示 z 轴）；使用最外面的圆圈围绕 Scene 视图 z 轴旋转游戏对象。可将此行为视为在屏幕空间中旋转。</p>
+</li>
+<li><p>缩放:<br>使用缩放工具(r)，可通过单击并拖动辅助图标中心的立方体，在所有轴上均匀地重新缩放游戏对象。也可以单独缩放每个轴，但如果在有子游戏对象的情况下执行此操作，则应该注意，因为效果看起来会很奇怪。</p>
+</li>
+<li><p>矩形变换: 前三个工具组合，一般用于 2d 对象</p>
+</li>
+<li><p>变换: 前三个工具的组合，一般用于 3d 对象</p>
+</li>
+</ol>
+<p>2、<strong>辅助图标控制柄 位置开关</strong></p>
+<ol>
+<li><p>位置</p>
+<p>单击左侧的 Pivot&#x2F;Center 按钮可在 Pivot 和 Center 之间切换。</p>
+<ul>
+<li>Pivot [ˈpɪvət] （枢 shu 轴 ） 将辅助图标定位在游戏对象的实际轴心点（由变换组件进行定义）。</li>
+<li>Center 将辅助图标定位在中心位置（根据所选游戏对象）。</li>
+</ul>
+<blockquote>
+<p>概念说明：</p>
+<ul>
+<li>Pivot: 该游戏对象（不包括子对象）的中心。</li>
+<li>Center: 该游戏对象（包括子对象）的中心。 center 就是你那个模型，或者多个模型联合起来的外接盒的几何中心。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>旋转</p>
+<p>单击右侧的 Local&#x2F;Global 按钮可在 Local 和 Global 之间切换。</p>
+<ul>
+<li>Local 保持辅助图标相对于游戏对象的旋转。</li>
+<li>Global 将辅助图标固定在世界空间方向。</li>
+</ul>
+<blockquote>
+<p>概念说明：</p>
+<ul>
+<li>Local: 相对于父对象的坐标（相对位置）</li>
+<li>Global: 在 scene 中的真实坐标（实际位置）</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h3 id="2-2-4、Scene-视图工具栏-控制栏"><a href="#2-2-4、Scene-视图工具栏-控制栏" class="headerlink" title="2.2.4、Scene 视图工具栏(控制栏)"></a>2.2.4、Scene 视图工具栏(控制栏)</h3><blockquote>
+<p>官方文档: <a target="_blank" rel="noopener" href="https://docs.unity3d.com/cn/current/Manual/ViewModes.html">Scene view View Options toolbar - Unity 手册 (unity3d.com)</a></p>
+</blockquote>
+<p>使用 Scene 视图控制栏可以选择用于查看场景的各种选项，还可以控制是否启用光照和音频。这些控件仅在开发期间影响 Scene 视图（视觉辅助），对构建的游戏没有影响。</p>
+<p>说白了就是视觉辅助，更方便我们清晰的看到我们想要了解的东西，并不做实质改变</p>
+<img src="/2022/08/01/Unity/image-20220804134241461.png" class="" title="This is an image">
+
+<p>1、<strong>绘制模式（Draw mode）下拉菜单</strong></p>
+<p>右边第一个下拉菜单选择要用于描绘场景的<strong>绘制模式</strong>。可用选项为:</p>
+<img src="/2022/08/01/Unity/image-20220804134648461.png" class="" title="This is an image">
+
+<p>2、<strong>2D&#x2F;3D、Lighting 和 Audio 开关</strong></p>
+<ol>
+<li>2D: 切换 2D &#x2F; 3D 视图</li>
+<li>Lighting: 打开或关闭 scene 光照（光源、对象着色等）</li>
+<li>Audio: 打开或关闭声音</li>
+</ol>
+<p>3、<strong>Effects 按钮和菜单</strong></p>
+<p>启用或禁用渲染效果</p>
+<ul>
+<li>Skybox: 在场景的背景中渲染的天空盒纹理</li>
+<li>Fog: 视图随着与摄像机之间的距离变远而逐渐消褪到单调颜色</li>
+<li>Flares: 光源上的镜头光晕</li>
+<li>Always Refresh: 定义动画元素是否播放动画。当选中，基于时间的特效会播放动画。比如场景特效(像地面上的草，随风摇摆)</li>
+<li>Post Processing: 后期处理特效是否显示</li>
+<li>Particle Systems: 粒子系统特效是否显示</li>
+</ul>
+<p>4、<strong>场景可见性开关</strong></p>
+<p>场景可见性开关可打开和关闭游戏对象场景可见性。在打开时，Unity 将应用场景可见性设置。关闭时，Unity 将忽略这些设置。此开关还显示场景中隐藏的游戏对象数量。</p>
+<p>5、<strong>Scene 视图摄像机设置</strong></p>
+<ol>
+<li><p>Scene Camera 和普通 Camera 的区别</p>
+<p>简单来说，Scene Camera 是开发者视角，Camera 游戏对象是玩家视角</p>
+<ul>
+<li>Scene Camera: 开发者使用 Unity 操作 Scene 视图时所看到的视角</li>
+<li>普通 Camera: 指 unity 中的摄像机游戏对象，是专门添加到 Scene 中，玩家在游戏中查看游戏世界时用到的视角</li>
+</ul>
+</li>
+<li><p>Scene Camera 设置</p>
+<p>摄像机设置菜单包含用于配置 Scene 视图摄像机的选项。这些调整不会影响带有摄像机组件的游戏对象上的设置。</p>
+<p>说白了，就是这个菜单只用来设置 scene camera ，跟游戏中普通的游戏对象 camera 无关</p>
+<img src="/2022/08/01/Unity/image-20220804135515114.png" class="" title="This is an image"></li>
+</ol>
+<h3 id="2-2-5、Gizmos-菜单"><a href="#2-2-5、Gizmos-菜单" class="headerlink" title="2.2.5、Gizmos 菜单"></a>2.2.5、Gizmos 菜单</h3><p>Gizmos 菜单包含用于控制对象、图标和辅助图标的显示方式的许多选项。此菜单在 Scene 视图和 Game 视图中均可用。</p>
+<h3 id="2-2-6、场景可见性"><a href="#2-2-6、场景可见性" class="headerlink" title="2.2.6、场景可见性"></a>2.2.6、场景可见性</h3><p>可见性控件可用于在 Scene 视图中快速隐藏和显示游戏对象，而无需更改它们在游戏中的可见性。这可用于处理难以查看和选择特定游戏对象的大型或复杂场景。</p>
+<p>操作方式和“拾取”控件完全一样</p>
+<img src="/2022/08/01/Unity/image-20220804135734153.png" class="" title="This is an image">
+
+
+
 <p>——未完待续——</p>
 
     
@@ -648,15 +856,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Unity</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">windows</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vim</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Unity</a>
               </li>
             
             <div class="clearfix"></div>
