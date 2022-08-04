@@ -40,8 +40,17 @@
 <meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804134648461.png">
 <meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804135515114.png">
 <meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804135734153.png">
+<meta property="og:image" content=" https://docs.unity3d.com/cn/2021.1/uploads/Main/Editor-PlayButtons.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804171408606.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804171457732.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804171707647.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804172609950.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804172945363.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804173019512.png">
+<meta property="og:image" content="https://jzhangcser01.github.io/2022/08/01/Unity/image-20220804173648538.png">
+<meta property="og:image" content="https://docs.unity3d.com/cn/2021.1/uploads/Main/inspector-ping.png">
 <meta property="article:published_time" content="2022-08-01T11:54:02.000Z">
-<meta property="article:modified_time" content="2022-08-04T06:03:08.326Z">
+<meta property="article:modified_time" content="2022-08-04T09:46:37.377Z">
 <meta property="article:author" content="Jiong Zhang">
 <meta property="article:tag" content="Unity">
 <meta name="twitter:card" content="summary">
@@ -263,7 +272,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">3.7k字</span>
+      <span class="post-count">4.4k字</span>
     </span>
   </span>
 
@@ -272,7 +281,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">13分</span>
+      <span class="post-count">16分</span>
     </span>
   </span>
 </div>
@@ -375,16 +384,11 @@
 <p>Unity 中使用的是左手坐标系，X 轴代表水平方向 horizontal, Y 轴代表垂直方向 vertical ，Z 轴代表深度。Vector3(x,y,z)</p>
 <p>Unity 中坐标系分类:</p>
 <ul>
-<li><p>word Space（世界坐标系）: 用来描述游戏场景内所有物体位置和方向的基准，Unity 场景中创建的物体都是以全局坐标系中的坐标原点（0，0，0）来确定各自的位置。</p>
-</li>
-<li><p>local Space（局部坐标系）: 是相对于父物体来说也就是当两个游戏对象互为父子关系，那么子物体会以父物体的坐标点为自身的坐标原点。如果游戏对象没有父物体,那么会以这个世界的 0,0 为自身的坐标原点。</p>
-</li>
-<li><p>Screen Space（屏幕坐标系）: 以像素为单位，左下角是（0，0），右上角为（screen.width, screen.height），Z 的位置是以相机的世界单位来衡量及物体离相机远近。</p>
-</li>
-<li><p>viewport（视口坐标）: 视口坐标是标准的和相对于相机的。相机的左下角为（0，0）点，右上角为（1，1）点，Z 的位置是以相机的世界单位来衡量的。</p>
-</li>
-<li><p>GUI 界面的坐标系: 这个坐标系与屏幕坐标系相似，不同的是该坐标系以屏幕的左上角为（0，0）点，右下角为（Screen.width，Screen.height）。</p>
-</li>
+<li>word Space（世界坐标系）: 用来描述游戏场景内所有物体位置和方向的基准，Unity 场景中创建的物体都是以全局坐标系中的坐标原点（0，0，0）来确定各自的位置。</li>
+<li>local Space（局部坐标系）: 是相对于父物体来说也就是当两个游戏对象互为父子关系，那么子物体会以父物体的坐标点为自身的坐标原点。如果游戏对象没有父物体,那么会以这个世界的 0,0 为自身的坐标原点。</li>
+<li>Screen Space（屏幕坐标系）: 以像素为单位，左下角是（0，0），右上角为（screen.width, screen.height），Z 的位置是以相机的世界单位来衡量及物体离相机远近。</li>
+<li>viewport（视口坐标）: 视口坐标是标准的和相对于相机的。相机的左下角为（0，0）点，右上角为（1，1）点，Z 的位置是以相机的世界单位来衡量的。</li>
+<li>GUI 界面的坐标系: 这个坐标系与屏幕坐标系相似，不同的是该坐标系以屏幕的左上角为（0，0）点，右下角为（Screen.width，Screen.height）。</li>
 </ul>
 </li>
 <li><p>Scene 视图坐标工具</p>
@@ -545,6 +549,88 @@
 <h3 id="2-2-6、场景可见性"><a href="#2-2-6、场景可见性" class="headerlink" title="2.2.6、场景可见性"></a>2.2.6、场景可见性</h3><p>可见性控件可用于在 Scene 视图中快速隐藏和显示游戏对象，而无需更改它们在游戏中的可见性。这可用于处理难以查看和选择特定游戏对象的大型或复杂场景。</p>
 <p>操作方式和“拾取”控件完全一样</p>
 <img src="/2022/08/01/Unity/image-20220804135734153.png" class="" title="This is an image">
+
+<h2 id="2-3、Game-视图、-Hierachy、Project、Inspector-窗口"><a href="#2-3、Game-视图、-Hierachy、Project、Inspector-窗口" class="headerlink" title="2.3、Game 视图、 Hierachy、Project、Inspector 窗口"></a>2.3、Game 视图、 Hierachy、Project、Inspector 窗口</h2><h3 id="2-3-1、Game-视图"><a href="#2-3-1、Game-视图" class="headerlink" title="2.3.1、Game 视图"></a>2.3.1、Game 视图</h3><blockquote>
+<p>官方文档: <a target="_blank" rel="noopener" href="https://docs.unity3d.com/cn/2021.1/Manual/GameView.html">Game 视图 - Unity 手册 (unity3d.com)</a></p>
+</blockquote>
+<p>1、<strong>Game 运行控制按钮</strong></p>
+<img src=" https://docs.unity3d.com/cn/2021.1/uploads/Main/Editor-PlayButtons.png">
+
+<ul>
+<li>运行游戏(ctrl+p)</li>
+<li>暂停(ctrl+shift+p)</li>
+<li>按帧运行(ctrl+alt+p)</li>
+</ul>
+<blockquote>
+<p>注意: 在运行模式下，所做的任何更改都是暂时的，在退出运行模式后将会重置。</p>
+</blockquote>
+<p>2、<strong>Game 视图控制栏</strong></p>
+<img src="/2022/08/01/Unity/image-20220804171408606.png" class="" title="This is an image">
+
+<img src="/2022/08/01/Unity/image-20220804171457732.png" class="" title="This is an image">
+
+<h3 id="2-3-2、Hierarchy-窗口"><a href="#2-3-2、Hierarchy-窗口" class="headerlink" title="2.3.2、Hierarchy 窗口"></a>2.3.2、Hierarchy 窗口</h3><blockquote>
+<p>官方文档: <a target="_blank" rel="noopener" href="https://docs.unity3d.com/cn/2021.1/Manual/Hierarchy.html">Hierarchy 窗口 - Unity 手册 (unity3d.com)</a></p>
+</blockquote>
+<p>场景中游戏对象的管理器（选择器）</p>
+<img src="/2022/08/01/Unity/image-20220804171707647.png" class="" title="This is an image">
+
+<p>Hierarchy 窗口显示场景中的每个游戏对象，如模型、摄像机或预制件。可以使用 Hierarchy 窗口对场景中使用的游戏对象进行排序和分组。在 Scene 视图中添加或移除游戏对象时，也会从 Hierarchy 窗口添加或移除它们。</p>
+<p>主要功能:</p>
+<ol>
+<li><p>父子包含关系:</p>
+<p>将游戏对象链接在一起以帮助移动、缩放或变换游戏对象的集合。移动顶层对象或父游戏对象时，也会移动所有子游戏对象。</p>
+</li>
+<li><p>管理游戏对象:</p>
+<ul>
+<li>创建、复制粘贴、选取、删除</li>
+<li>更改嵌套关系</li>
+<li>是否可选，是否可见</li>
+<li>排序</li>
+</ul>
+</li>
+<li><p>多场景编辑</p>
+</li>
+</ol>
+<blockquote>
+<p>注意: Hierarchy 窗口中，虽然允许编辑多个场景，但根节点通常都是场景对象（scene），其他的游戏对象都包含在某个场景中。</p>
+</blockquote>
+<h3 id="2-3-3、Project-窗口"><a href="#2-3-3、Project-窗口" class="headerlink" title="2.3.3、Project 窗口"></a>2.3.3、Project 窗口</h3><blockquote>
+<p>官方文档: <a target="_blank" rel="noopener" href="https://docs.unity3d.com/cn/2021.1/Manual/ProjectView.html">Project 窗口 - Unity 手册 (unity3d.com)</a></p>
+</blockquote>
+<p>Project 窗口显示与项目相关的所有文件，该窗口是在应用程序中导航和查找资源以及其他项目文件的主要方法。</p>
+<img src="/2022/08/01/Unity/image-20220804172609950.png" class="" title="This is an image">
+
+<p>1、<strong>Project 工具栏</strong></p>
+<p>Project 常用操作工具按钮栏</p>
+<img src="/2022/08/01/Unity/image-20220804172945363.png" class="" title="This is an image">
+
+<img src="/2022/08/01/Unity/image-20220804173019512.png" class="" title="This is an image">
+
+<p>2、<strong>资源管理区域</strong></p>
+<ol>
+<li><p>左侧树状目录:</p>
+<ul>
+<li>Assets: 资源文件</li>
+<li>Packages: 库文件（运行游戏所需要的程序库）</li>
+</ul>
+</li>
+<li><p>右侧文件操作区域:</p>
+<p>如同 windows 中的文件操作方式一样</p>
+</li>
+</ol>
+<h3 id="2-3-4、Inspector-窗口"><a href="#2-3-4、Inspector-窗口" class="headerlink" title="2.3.4、Inspector 窗口"></a>2.3.4、Inspector 窗口</h3><blockquote>
+<p>官方文档: <a target="_blank" rel="noopener" href="https://docs.unity3d.com/cn/2021.1/Manual/UsingTheInspector.html">Inspector 窗口 - Unity 手册 (unity3d.com)</a></p>
+</blockquote>
+<p>被选中游戏对象的属性窗口，可以在其中查看、编辑属性</p>
+<img src="/2022/08/01/Unity/image-20220804173648538.png" class="" title="This is an image">
+
+<p>使用 Inspector 窗口可对 Unity 编辑器中几乎所有内容（包括游戏对象、Unity 组件、资源、材质）查看和编辑属性和设置，以及查看和编辑编辑器内的设置和首选项。</p>
+<p>选择相同类型的多个资源时，Inspector 窗口会显示它们共有的所有属性。选择不同类型的多个资源时，Inspector 会显示一个列表，其中显示选择的每种类型资源的数量。单击该列表中的任何项可检查该类型的所有资源。</p>
+<p><strong>查找 Inspector 窗口的源:</strong></p>
+<p>在 Inspector 窗口中打开游戏对象或资源时，可以使用 Ping 命令在 Scene 视图或 Project 视图中查找它。</p>
+<p>从 Inspector 窗口的 More Items (⋮) 菜单，选择 Ping。Unity 在 Hierarchy 视图或 Project 视图中突出显示该项目。</p>
+<img src="https://docs.unity3d.com/cn/2021.1/uploads/Main/inspector-ping.png">
 
 
 
@@ -852,6 +938,10 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Unity</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
@@ -861,10 +951,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vim</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Unity</a>
               </li>
             
             <div class="clearfix"></div>
